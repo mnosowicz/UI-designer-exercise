@@ -4,7 +4,7 @@
 
 h1, h2 {
   font-family: $condensed-font-stack;
-  color: $brand-primary;
+  color: $brand-dark;
   text-transform: uppercase;
 }
 h2{
@@ -12,7 +12,7 @@ h2{
   margin-bottom:1em;
 
   span{
-    color:lighten($brand-primary,40%);
+    color:lighten($brand-dark,40%);
     padding-left:0.1em;
   }
 }

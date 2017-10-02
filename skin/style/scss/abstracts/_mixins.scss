@@ -1,0 +1,21 @@
+/* basic mixins for joe's diner */
+
+@mixin clearblock($float: left) {
+  display: inline-block;
+  float: $float;
+  width: 100%;
+  clear: both;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box;
+}
+
+@mixin bgsize($size) {
+  -webkit-background-size: $size;
+  -moz-background-size: $size;
+  -o-background-size: $size;
+  background-size: $size;
+}

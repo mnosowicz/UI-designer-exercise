@@ -2,7 +2,7 @@
 
 html,body {
   height:100%;
-  font-family:'Roboto', sans-serif;
+  font-family:  $text-font-stack;
   font-size:16px;
 }
 
@@ -17,7 +17,7 @@ html,body {
     height:100%;
     max-height:42px;
 
-    @media (min-width: 768px){
+    @media (min-width: $bp-md){
       max-height:50px;
       min-height:50px;
     }
@@ -27,7 +27,7 @@ html,body {
 .content-block{
   margin-bottom:2em;
 
-  @media (min-width: 768px){
+  @media (min-width: $bp-md){
     margin-bottom:inherit;
 
     p{

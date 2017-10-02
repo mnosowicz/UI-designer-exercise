@@ -1,0 +1,21 @@
+/* basic skin vars for joe's diner */
+
+
+// Regular font family
+$text-font-stack: 'Roboto', sans-serif !default;
+$condensed-font-stack: 'Roboto Condensed', sans-serif;
+
+//B&W
+$white:                     #fff;
+$gray-200:                  #e9ecef;
+$gray-400:                  #ced4da;
+$gray-600:                  #868e96;
+$gray-800:                  #343a40;
+$black:                     #000;
+//Brand Colors
+$brand-primary:             #a33202;
+$brand-secondary: #2fc06d;
+
+
+/// Breakpoints
+$bp-md:                   768px;

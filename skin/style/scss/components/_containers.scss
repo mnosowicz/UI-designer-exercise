@@ -6,16 +6,15 @@
   min-height:55%;
   overflow:hidden;
 
-  @media (min-width: 768px){
+  @media (min-width: $bp-md){
     min-height:100%;
   }
 }
 
 // splash container
-
 .splash{
-  background:#333 url('../../images/bg_home_mobile.jpg') no-repeat top center;
-  background-size: cover;
+  background:$gray-800 url('../../images/bg_home_mobile.jpg') no-repeat top center;
+  @include bgsize(cover);
   background-attachment:fixed;
   position:relative;
   display: -ms-flexbox;  display: -webkit-flex;  display: flex;
@@ -26,8 +25,8 @@
   -webkit-align-items: center;  -ms-flex-align: center;  align-items: center;
 
   @media (min-width: 768px){
-    background:#333 url('../../images/bg_home.jpg') no-repeat top center;
-    background-size: cover;
+    background:$gray-800 url('../../images/bg_home.jpg') no-repeat top center;
+    @include bgsize(cover);
     background-attachment:fixed;
   }
 
@@ -54,7 +53,7 @@
     padding:0;
   }
 
-  @media (min-width: 768px){
+  @media (min-width: $bp-md){
     display: -ms-flexbox;  display: -webkit-flex;  display: flex;
     -webkit-flex-direction: column;  -ms-flex-direction: column;  flex-direction: column;
     -webkit-flex-wrap: nowrap;  -ms-flex-wrap: nowrap;  flex-wrap: nowrap;

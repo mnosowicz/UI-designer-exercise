@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Welcome to Joe's Diner!</title>
-    <link href="style/css/main.css" rel="stylesheet">
+    <link href="skin/style/css/main.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -15,6 +15,7 @@
 <body>
 
 <div class="container-full splash" role="banner">
+    <!-- Static navbar -->
     <nav class="navbar navbar-default transparent">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -24,7 +25,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">LOGO</a>
+                <a class="navbar-brand" href="#"><img class="logo" src="skin/images/logo_white.png" alt="Joe's Diner" /></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right" role="navigation">
@@ -34,26 +35,30 @@
             </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
     </nav>
+
     <div class="col-lg-6 text-center">
         <div class="jumbotron">
             <h1>
                 <a href="">
-                    <img class="logo" src="images/logo_black.png" alt="Joe's Diner" />
+                    <img class="logo" src="skin/images/logo_black.png" alt="Joe's Diner" />
                 </a>
             </h1>
             <section class="subtitle" aria-label="Contact Information">
-                <a href="" target="_blank" aria-label="Open map in new window">
+                <a href="https://goo.gl/maps/WTYdVkJ3yTD2" target="_blank" aria-label="Open map in new window">
                     298 Main st.<br />Buffalo, NY 14202
                 </a>
-                <a href="" aria-label="Call Now">
+                <a href="tel:+17162700000" aria-label="Call Now">
                     (716)270-0000
                 </a>
             </section>
         </div>
     </div>
-</div> <!-- /container splash -->
+
+
+</div> <!-- /container full -->
 
 <div class="container about" role="main">
+
     <div class="row">
         <div class="col-xs-12 col-md-8 content-block">
             <h2>About<span>Joe's</span></h2>
@@ -81,7 +86,8 @@
             </div>
         </div>
     </div>
-</div> <!-- /container about -->
+
+</div>
 
 
 <div class="container-full footer" role="contentinfo">
@@ -89,6 +95,8 @@
         <!--future footer nav & legal info here -->
     </div>
 </div>
+
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/vendor/bootstrap.js"></script>

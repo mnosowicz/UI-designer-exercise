@@ -1,32 +1,36 @@
 /* bootstrap navbar overrides for joe's diner */
 
-.navbar.transparent{
-  background:rgba(0,0,0,0.6);
-  border:none;
+.navbar.transparent {
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
   @include border-radius(0);
 }
 
-.navbar-toggle{
-  border:none;
+.navbar-toggle {
+  border: none;
   @include border-radius(0);
-  background:transparent;
+  background: transparent;
 }
 
-.navbar-default .navbar-collapse{
-  border-color: $black;
-  background-color: rgba(0, 0, 0, 0.7);
+@media (max-width: $bp-md) {
+  .navbar-default .navbar-collapse {
+    border-color: $black;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
 }
 
 //slightly increase navbar height on desktop
-@media (min-width: $bp-md){
-  .navbar-brand{
-    height:auto;
+@media (min-width: $bp-md) {
+  .navbar-brand {
+    height: auto;
   }
-  .container-fluid>.navbar-header{
-    min-height:80px;
+  .container-fluid > .navbar-header {
+    min-height: 80px;
   }
-  .navbar-nav>li>a{
-    line-height:50px;
-    &.icon{font-size:1.5em;}
+  .navbar-nav > li > a {
+    line-height: 50px;
+    &.icon {
+      font-size: 1.5em;
+    }
   }
 }

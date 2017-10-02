@@ -1,37 +1,37 @@
 /* general styles for joe's diner */
 
-html,body {
-  height:100%;
-  font-family:  $text-font-stack;
-  font-size:17px;
+html, body {
+  height: 100%;
+  font-family: $text-font-stack;
+  font-size: 17px;
 }
 
-.logo{
-  width:100%;
-  max-width:342px;
+.logo {
+  width: 100%;
+  max-width: 342px;
 }
 
-.navbar,.footer{
-  .logo{
-    width:auto;
-    height:100%;
-    max-height:42px;
+.navbar, .footer {
+  .logo {
+    width: auto;
+    height: 100%;
+    max-height: 42px;
 
-    @media (min-width: $bp-md){
-      max-height:50px;
-      min-height:50px;
+    @media (min-width: $bp-md) {
+      max-height: 50px;
+      min-height: 50px;
     }
   }
 }
 
-.content-block{
-  margin-bottom:2em;
+.content-block {
+  margin-bottom: 2em;
 
-  @media (min-width: $bp-md){
-    margin-bottom:inherit;
+  @media (min-width: $bp-md) {
+    margin-bottom: inherit;
 
-    p{
-      padding-right:5em;
+    p {
+      padding-right: 5em;
     }
   }
 }

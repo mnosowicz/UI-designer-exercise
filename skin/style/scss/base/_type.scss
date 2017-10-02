@@ -7,12 +7,13 @@ h1, h2 {
   color: $brand-dark;
   text-transform: uppercase;
 }
-h2{
-  font-size: 2.5em;
-  margin-bottom:1em;
 
-  span{
-    color:lighten($brand-dark,40%);
-    padding-left:0.1em;
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+
+  span {
+    color: lighten($brand-dark, 40%);
+    padding-left: 0.1em;
   }
 }

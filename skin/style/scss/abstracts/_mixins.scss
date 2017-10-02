@@ -19,3 +19,9 @@
   -o-background-size: $size;
   background-size: $size;
 }
+
+@mixin box-shadow($args) {
+  -webkit-box-shadow: $args;
+  -moz-box-shadow: $args;
+  box-shadow: $args;
+}

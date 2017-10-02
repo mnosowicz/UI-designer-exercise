@@ -1,0 +1,75 @@
+/* bootstrap container customization for joe's diner */
+
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+  min-height:55%;
+  overflow:hidden;
+
+  @media (min-width: 768px){
+    min-height:100%;
+  }
+}
+
+// splash container
+
+.splash{
+  background:#333 url('../../images/bg_home_mobile.jpg') no-repeat top center;
+  background-size: cover;
+  background-attachment:fixed;
+  position:relative;
+  display: -ms-flexbox;  display: -webkit-flex;  display: flex;
+  -webkit-flex-direction: column;  -ms-flex-direction: column;  flex-direction: column;
+  -webkit-flex-wrap: nowrap;  -ms-flex-wrap: nowrap;  flex-wrap: nowrap;
+  -webkit-justify-content: center;  -ms-flex-pack: center;  justify-content: center;
+  -webkit-align-content: center;  -ms-flex-line-pack: center;  align-content: center;
+  -webkit-align-items: center;  -ms-flex-align: center;  align-items: center;
+
+  @media (min-width: 768px){
+    background:#333 url('../../images/bg_home.jpg') no-repeat top center;
+    background-size: cover;
+    background-attachment:fixed;
+  }
+
+  .navbar-default{
+    position:fixed;
+    right:0;top:0;left:0;
+    margin-bottom:0;
+    z-index:999;
+  }
+}
+
+// about container
+.about{
+  padding-top:4em;
+  padding-bottom:4em;
+  min-height:80%;
+
+  .panel{
+    border:0;
+    border-radius:0;
+  }
+
+  .panel-body{
+    padding:0;
+  }
+
+  @media (min-width: 768px){
+    display: -ms-flexbox;  display: -webkit-flex;  display: flex;
+    -webkit-flex-direction: column;  -ms-flex-direction: column;  flex-direction: column;
+    -webkit-flex-wrap: nowrap;  -ms-flex-wrap: nowrap;  flex-wrap: nowrap;
+    -webkit-justify-content: center;  -ms-flex-pack: center;  justify-content: center;
+    -webkit-align-content: stretch;  -ms-flex-line-pack: stretch;  align-content: stretch;
+    -webkit-align-items: center;  -ms-flex-align: center;  align-items: center;
+
+    .panel-body{
+      padding-top:0;
+    }
+  }
+}
+
+//footer is not really necessary yet but let's prep the turf
+.container-full.footer{
+  background: rgba(0, 0, 0, 0.14);
+  min-height: 50px;
+}

@@ -1,0 +1,47 @@
+/* bootstrap jumbotron customization for joe's diner */
+
+.splash .jumbotron{
+  background:rgba(255,255,255,0.72);
+  max-width:620px;
+  margin:0 auto;
+  display: -ms-flexbox;  display: -webkit-flex;  display: flex;
+  -webkit-flex-direction: column;  -ms-flex-direction: column;  flex-direction: column;
+  -webkit-flex-wrap: nowrap;  -ms-flex-wrap: nowrap;  flex-wrap: nowrap;
+  -webkit-justify-content: center;  -ms-flex-pack: center;  justify-content: center;
+  -webkit-align-content: center;  -ms-flex-line-pack: center;  align-content: center;
+  -webkit-align-items: center;  -ms-flex-align: center;  align-items: center;
+
+  @media (min-width: 768px){
+    display:inherit;
+    position:relative;
+    top:auto;right:auto;bottom:auto;left:auto;
+  }
+
+
+  .logo{
+    max-width:60%;
+    @media (min-width: 768px){ max-width:342px; }
+  }
+
+  section.subtitle{
+    display:inline-block;
+    width:100%;
+    margin: 2em 0 0 0;
+
+    a{
+      color:black;
+      display:inline-block;
+      float:left;
+      width:100%;
+      clear:both;
+      margin:1em 0 0 0;
+      font-size: 1em;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: .2em;
+      line-height:1.2;
+
+      @media (min-width: 768px){ font-size: 2em; }
+    }
+  }
+}

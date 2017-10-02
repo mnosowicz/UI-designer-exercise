@@ -1,0 +1,19 @@
+/* base font & type scss for joe's diner */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:400,700');
+
+h1, h2 {
+  font-family: 'Roboto Condensed', sans-serif;
+  //font-weight: bold;
+  color: #a33202;
+  text-transform: uppercase;
+}
+h2{
+  font-size: 2.5em;
+  margin-bottom:1em;
+
+  span{
+    color:lighten(#a33202,40%);
+    padding-left:0.1em;
+  }
+}

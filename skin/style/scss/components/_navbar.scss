@@ -1,0 +1,33 @@
+/* bootstrap navbar overrides for joe's diner */
+
+.navbar.transparent{
+  background:rgba(0,0,0,0.6);
+  border:none;
+  border-radius:0;
+}
+
+.navbar-toggle{
+  border:none;
+  border-radius:0;
+  background:transparent;
+}
+
+.navbar-default .navbar-collapse{
+  border-color:black;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+//slightly increase navbar height on desktop
+@media (min-width: 768px){
+  .navbar-brand{
+    height:auto;
+  }
+  .container-fluid>.navbar-header{
+    min-height:80px;
+  }
+  .navbar-nav>li>a{
+    line-height:50px;
+
+    &.icon{font-size:1.5em;}
+  }
+}
